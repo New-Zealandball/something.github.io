@@ -20,6 +20,46 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-W9VXKF68');</script>
 <!-- End Google Tag Manager -->
+<div class="control-group">
+  <label for="id_recaptcha">Please enter the text below:</label>
+  <script src="//www.recaptcha.net/recaptcha/api.js"></script>
+<script type="text/javascript">
+    var DjangoRecaptchaOptions = {
+  "lang": "en"
+};
+    if (typeof RecaptchaOptions !== 'object') {
+        RecaptchaOptions = DjangoRecaptchaOptions;
+    } else {
+        for (key in DjangoRecaptchaOptions) {
+            RecaptchaOptions[key] = DjangoRecaptchaOptions[key];
+        }
+    }
+</script>
+<div class="g-recaptcha" data-sitekey="6LeRbUwUAAAAAFYhKgk3G9OKWqE_OJ7Z-7VTUCbl"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-cwqsj38q77ew" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.recaptcha.net/recaptcha/api2/anchor?ar=1&amp;k=6LeRbUwUAAAAAFYhKgk3G9OKWqE_OJ7Z-7VTUCbl&amp;co=aHR0cHM6Ly9zY3JhdGNoLm1pdC5lZHU6NDQz&amp;hl=en&amp;v=hfUfsXWZFeg83qqxrK27GB8P&amp;size=normal&amp;cb=lpfpep7dpkb4"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
+<noscript>
+  <div style="width: 302px; height: 352px;">
+    <div style="width: 302px; height: 352px; position: relative;">
+      <div style="width: 302px; height: 352px; position: absolute;">
+        <iframe src="//www.recaptcha.net/recaptcha/api/fallback?k=6LeRbUwUAAAAAFYhKgk3G9OKWqE_OJ7Z-7VTUCbl"
+                frameborder="0" scrolling="no"
+                style="width: 302px; height:352px; border-style: none;">
+        </iframe>
+      </div>
+      <div style="width: 250px; height: 80px; position: absolute; border-style: none;
+                  bottom: 21px; left: 25px; margin: 0px; padding: 0px; right: 25px;">
+        <textarea id="g-recaptcha-response" name="g-recaptcha-response"
+                  class="recaptcha_challenge_field"
+                  style="width: 250px; height: 80px; border: 1px solid #c1c1c1;
+                         margin: 0px; padding: 0px; resize: none;" value="">
+        </textarea>
+        <input type='hidden' name='recaptcha_response_field' value='manual_challenge' />
+      </div>
+    </div>
+  </div>
+</noscript>
+
+  
+</div>
 <style>
 body {
 background-color: lightblue;
